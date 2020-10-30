@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<!--  -->
+<!--  -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf_token" content="oen7sWdNYmdeh44g9fHgUMuxEbpMmznjTgW5uX2v">
+    <meta name="csrf-token" content="oen7sWdNYmdeh44g9fHgUMuxEbpMmznjTgW5uX2v">
+    <title>
+        MobileHub 后台管理系统
+    </title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="/mobileHub/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/mobileHub/bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="/mobileHub/bower_components/Ionicons/css/ionicons.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="/mobileHub/dist/css/skins/_all-skins.min.css">
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="/mobileHub/bower_components/morris.js/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="/mobileHub/bower_components/jvectormap/jquery-jvectormap.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet"
+        href="/mobileHub/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="/mobileHub/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="/mobileHub/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="/mobileHub/bower_components/select2/dist/css/select2.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/mobileHub/dist/css/AdminLTE.min.css">
+    <!-- Bootstrap-sweetAlert -->
+    <link rel="stylesheet" href="/mobileHub/bower_components/bootstrap-sweetalert/dist/sweetalert.css">
+    <link rel="icon" type="image/png" href="/mobileHub/dist/img/favicon.png">
+    <link rel="stylesheet" href="/mobileHub/css/main.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+    <!-- <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    <!-- Google Font -->
+    <!--
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+          -->
+    <script type="text/javascript" src="//s.thsi.cn/js/m/vue/vue-2.5.10.min.js"></script>
+    <script type="text/javascript" src="//s.thsi.cn/js/m/business/less.js"></script>
+    <script src="/mobileHub/js/dataBoard/common/vue-resource.js"></script>
+    <style>
+        @import url("/mobileHub/css/adConfig/common/elementUI.css");
+    </style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo --><a href="http://testm.10jqka.com.cn/mobileHub" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>HUB</b></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">MOBILE<b>HUB</b></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button--><a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <a href="#" style="padding: 15px 15px; float: left; color: #fff;">
+                </a>
+
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Control Sidebar Toggle Button -->
+                        <li>
+                            <a href="http://testm.10jqka.com.cn/mobileHub/logout" title="退出登录"><i
+                                    class="fa fa-sign-out"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header><!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Create the tabs -->
+            <ul class="nav nav-tabs nav-justified control-sidebar-tabs"></ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!-- Home tab content -->
+                <div class="tab-pane" id="control-sidebar-home-tab">
+                    <!-- /.control-sidebar-menu -->
+                    <!-- /.control-sidebar-menu -->
+                </div>
+                <!-- /.tab-pane -->
+                <!-- Stats tab content -->
+                <div class="tab-pane" id="control-sidebar-stats-tab"></div>
+                <!-- /.tab-pane -->
+                <!-- Settings tab content -->
+                <div class="tab-pane" id="control-sidebar-settings-tab">
+                </div>
+                <!-- /.tab-pane -->
+            </div>
+        </aside><!-- /.control-sidebar -->
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="/mobileHub/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>admin</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
+                    </div>
+                </div>
+                <!-- search form -->
+                <div class="sidebar-form">
+                    <div class="input-group" style="width: 100%;">
+                        <select type="text" name="q" class="form-control" id="menu-search">
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub" menu-id="5">主页</option>
+                            <option data-url="#" menu-id="1">权限管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/user/manage" menu-id="24">用户管理
+                            </option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/permissionApply/auditing"
+                                menu-id="101">审核权限申请</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/permission" menu-id="2">角色管理</option>
+                            <option data-url="#" menu-id="99">申请权限</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/permissionApply/index" menu-id="100">
+                                个人权限申请</option>
+                            <option data-url="#" menu-id="60">划重点配置</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/newsSelected/article" menu-id="61">
+                                文章配置</option>
+                            <option data-url="#" menu-id="155">首页feed流</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/indexApp"
+                                menu-id="227">顶部应用管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/indexFeedRecommend/indexFeedManage"
+                                menu-id="210">feed流推荐</option>
+                            <option data-url="#" menu-id="229">FEED流tab栏管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/tabName"
+                                menu-id="225">tab模板管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/tab"
+                                menu-id="226">新版tab管理</option>
+                            <option
+                                data-url="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/DynamicUserGroup"
+                                menu-id="239">动态用户组管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/userGroup"
+                                menu-id="221">用户组管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/appManage"
+                                menu-id="223">APP管理</option>
+                            <option data-url="#" menu-id="224">宫格管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/gongGe"
+                                menu-id="228">宫格配置</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/AppName"
+                                menu-id="219">应用名称管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/App"
+                                menu-id="220">应用管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/appGroup"
+                                menu-id="222">应用分类管理</option>
+                            <option data-url="#" menu-id="117">运营中台</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/Permission"
+                                menu-id="178">业务及权限管理</option>
+                            <option data-url="#" menu-id="183">推送系统</option>
+                            <option data-url="#" menu-id="191">PUSH后台</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_push/PushAmount"
+                                menu-id="192">PUSH业务方排期</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_push/PushLink" menu-id="195">
+                                PUSH链接录入</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_push/PushInfo" menu-id="206">
+                                PUSH列表</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_push/PushLimit" menu-id="207">
+                                PUSH条数限制</option>
+                            <option data-url="#" menu-id="142">智能运营系统</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/Strategy"
+                                menu-id="143">策略管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/Event" menu-id="144">
+                                事件管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/StrategyOption"
+                                menu-id="145">全局触达配置</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/audit/auditApplyPage"
+                                menu-id="208">推送系统权限申请</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/audit/index"
+                                menu-id="209">推送系统权限审核</option>
+                            <option data-url="#" menu-id="174">广告后台</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/index" menu-id="175">
+                                广告列表</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/price/index"
+                                menu-id="234">广告筹码分配</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/carousel/index"
+                                menu-id="184">轮播控制</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/ad/position/index"
+                                menu-id="240">广告位配置</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/ad/listPage"
+                                menu-id="244">广告列表（新）</option>
+                            <option data-url="#" menu-id="199">数据看板</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/outerLink/cbas"
+                                menu-id="200">cbas后台</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_dataBoard/config/index"
+                                menu-id="235">活动申请配置</option>
+                            <option data-url="#" menu-id="124">用户标签及分群系统</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/outerLink/kyc"
+                                menu-id="198">KYC标签后台</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/UserGroup"
+                                menu-id="125">用户分群</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/CbasLabel"
+                                menu-id="126">标签库</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/labelManage"
+                                menu-id="127">标签管理</option>
+                            <option data-url="#" menu-id="128">内容管理及标签系统</option>
+                            <option data-url="#" menu-id="130">内容标签库</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_operationArsenal/labelSystem"
+                                menu-id="133">标签体系</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_operationArsenal/labelManage"
+                                menu-id="134">内容标签管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/outerLink/landPage"
+                                menu-id="197">落地页配置后台</option>
+                            <option data-url="#" menu-id="204">马良绘图</option>
+                            <option data-url="#" menu-id="129">人工文章</option>
+                            <option
+                                data-url="http://testm.10jqka.com.cn/mobileHub/docker_operationArsenal/articleManage/query"
+                                menu-id="131">文章查询</option>
+                            <option
+                                data-url="http://testm.10jqka.com.cn/mobileHub/docker_operationArsenal/articleManage/add"
+                                menu-id="132">新增文章</option>
+                            <option
+                                data-url="http://testm.10jqka.com.cn/mobileHub/docker_operationArsenal/userfile/list"
+                                menu-id="173">用户名单</option>
+                            <option data-url="#" menu-id="56">微信服务号配置</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/wechatMp/messageTemplates"
+                                menu-id="214">消息模板管理</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/wechatMp/sendMessageTemplates"
+                                menu-id="215">模板消息群发</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_transit/actRedPackage/index"
+                                menu-id="243">活动红包配置</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/wechatMp/menu" menu-id="57">菜单配置
+                            </option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/wechatMp/subscribe" menu-id="58">
+                                被订阅回复配置</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/wechatMp/message" menu-id="59">
+                                收到消息回复配置</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/wechatMp/textMessageReply"
+                                menu-id="205">关键词自动回复</option>
+                            <option data-url="#" menu-id="157">同花顺速递</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_event/EventAdd" menu-id="182">
+                                添加临时事件</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_event/EventType"
+                                menu-id="158">事件类型</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_event/EventList"
+                                menu-id="181">查询事件</option>
+                            <option data-url="#" menu-id="171">个性化精推</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/index"
+                                menu-id="179">个性化精推push</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/title"
+                                menu-id="180">个性化标题</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/increase"
+                                menu-id="193">5日涨幅榜</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/ztfp"
+                                menu-id="194">涨停复盘</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/pushPage"
+                                menu-id="201">市值分布</option>
+                            <option data-url="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/bkyd"
+                                menu-id="202">板块异动标题</option>
+                        </select>
+                        <!--
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i
+                                class="fa fa-search"></i>
+                    </button>
+                </span>
+                -->
+                    </div>
+                </div>
+                <!-- /.search form -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu tree" data-widget="tree" id="sidebar-menu">
+                    <li class="header">菜单 <span class="fa fa-refresh pull-right" id="refresh"> 刷新</span>
+                    </li>
+                    <li><a parent_id="0" menu_id="5" href="http://testm.10jqka.com.cn/mobileHub"><i
+                                class="fa fa-dashboard"></i><span>主页</span></a></li>
+                    <li class="treeview">
+                        <a href="#" parent_id="0" menu_id="1"><i class="fa fa-puzzle-piece"></i><span>权限管理</span>
+                            <span class="pull-right-container"><i class="fa fa-angle-down pull-right"></i></span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a parent_id="1" menu_id="24" href="http://testm.10jqka.com.cn/mobileHub/user/manage"><i
+                                        class="fa fa-group"></i><span>用户管理</span></a></li>
+                            <li><a parent_id="1" menu_id="101"
+                                    href="http://testm.10jqka.com.cn/mobileHub/permissionApply/auditing"><i
+                                        class="fa  fa-user-plus"></i><span>审核权限申请</span></a></li>
+                            <li><a parent_id="1" menu_id="2" href="http://testm.10jqka.com.cn/mobileHub/permission"><i
+                                        class="fa fa-user"></i><span>角色管理</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#" parent_id="0" menu_id="99"><i class="fa fa-bars"></i><span>申请权限</span>
+                            <span class="pull-right-container"><i class="fa fa-angle-down pull-right"></i></span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a parent_id="99" menu_id="100"
+                                    href="http://testm.10jqka.com.cn/mobileHub/permissionApply/index"><i
+                                        class="fa fa-user"></i><span>个人权限申请</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#" parent_id="0" menu_id="60"><i class="fa fa-pencil-square-o"></i><span>划重点配置</span>
+                            <span class="pull-right-container"><i class="fa fa-angle-down pull-right"></i></span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a parent_id="60" menu_id="61"
+                                    href="http://testm.10jqka.com.cn/mobileHub/newsSelected/article"><i
+                                        class="fa fa-book"></i><span>文章配置</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#" parent_id="0" menu_id="155"><i class="fa fa-bars"></i><span>首页feed流</span>
+                            <span class="pull-right-container"><i class="fa fa-angle-down pull-right"></i></span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a parent_id="155" menu_id="227"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/indexApp"><i
+                                        class="fa fa-bars"></i><span>顶部应用管理</span></a></li>
+                            <li><a parent_id="155" menu_id="210"
+                                    href="http://testm.10jqka.com.cn/mobileHub/indexFeedRecommend/indexFeedManage"><i
+                                        class="fa fa-bars"></i><span>feed流推荐</span></a></li>
+                            <li class="treeview">
+                                <a href="#" parent_id="155" menu_id="229"><i
+                                        class="fa fa-bars"></i><span>FEED流tab栏管理</span>
+                                    <span class="pull-right-container"><i
+                                            class="fa fa-angle-down pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a parent_id="229" menu_id="225"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/tabName"><i
+                                                class="fa fa-bars"></i><span>tab模板管理</span></a></li>
+                                    <li><a parent_id="229" menu_id="226"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/tab"><i
+                                                class="fa fa-bars"></i><span>新版tab管理</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a parent_id="155" menu_id="239"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/DynamicUserGroup"><i
+                                        class="fa fa-bars"></i><span>动态用户组管理</span></a></li>
+                            <li><a parent_id="155" menu_id="221"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/userGroup"><i
+                                        class="fa fa-bars"></i><span>用户组管理</span></a></li>
+                            <li><a parent_id="155" menu_id="223"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/appManage"><i
+                                        class="fa fa-bars"></i><span>APP管理</span></a></li>
+                            <li class="treeview">
+                                <a href="#" parent_id="155" menu_id="224"><i class="fa fa-bars"></i><span>宫格管理</span>
+                                    <span class="pull-right-container"><i
+                                            class="fa fa-angle-down pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a parent_id="224" menu_id="228"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/gongGe"><i
+                                                class="fa fa-bars"></i><span>宫格配置</span></a></li>
+                                    <li><a parent_id="224" menu_id="219"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/AppName"><i
+                                                class="fa fa-bars"></i><span>应用名称管理</span></a></li>
+                                    <li><a parent_id="224" menu_id="220"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/App"><i
+                                                class="fa fa-bars"></i><span>应用管理</span></a></li>
+                                    <li><a parent_id="224" menu_id="222"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_indexFeed/IndexFeed/appGroup"><i
+                                                class="fa fa-bars"></i><span>应用分类管理</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#" parent_id="0" menu_id="117"><i class="fa fa-bars"></i><span>运营中台</span>
+                            <span class="pull-right-container"><i class="fa fa-angle-down pull-right"></i></span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a parent_id="117" menu_id="178"
+                                    href="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/Permission"><i
+                                        class="fa fa-bars"></i><span>业务及权限管理</span></a></li>
+                            <li class="treeview">
+                                <a href="#" parent_id="117" menu_id="183"><i
+                                        class="fa fa-paper-plane"></i><span>推送系统</span>
+                                    <span class="pull-right-container"><i
+                                            class="fa fa-angle-down pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class="treeview">
+                                        <a href="#" parent_id="183" menu_id="191"><i
+                                                class="fa fa-bars"></i><span>PUSH后台</span>
+                                            <span class="pull-right-container"><i
+                                                    class="fa fa-angle-down pull-right"></i></span>
+                                        </a>
+                                        <ul class="treeview-menu">
+                                            <li><a parent_id="191" menu_id="192"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_push/PushAmount"><i
+                                                        class="fa fa-bars"></i><span>PUSH业务方排期</span></a></li>
+                                            <li><a parent_id="191" menu_id="195"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_push/PushLink"><i
+                                                        class="fa fa-bars"></i><span>PUSH链接录入</span></a></li>
+                                            <li><a parent_id="191" menu_id="206"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_push/PushInfo"><i
+                                                        class="fa fa-bars"></i><span>PUSH列表</span></a></li>
+                                            <li><a parent_id="191" menu_id="207"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_push/PushLimit"><i
+                                                        class="fa fa-bars"></i><span>PUSH条数限制</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="treeview">
+                                        <a href="#" parent_id="183" menu_id="142"><i
+                                                class="fa fa-bars"></i><span>智能运营系统</span>
+                                            <span class="pull-right-container"><i
+                                                    class="fa fa-angle-down pull-right"></i></span>
+                                        </a>
+                                        <ul class="treeview-menu">
+                                            <li><a parent_id="142" menu_id="143"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/Strategy"><i
+                                                        class="fa fa-bars"></i><span>策略管理</span></a></li>
+                                            <li><a parent_id="142" menu_id="144"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/Event"><i
+                                                        class="fa fa-bars"></i><span>事件管理</span></a></li>
+                                            <li><a parent_id="142" menu_id="145"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/StrategyOption"><i
+                                                        class="fa fa-bars"></i><span>全局触达配置</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a parent_id="183" menu_id="208"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/audit/auditApplyPage"><i
+                                                class="fa fa-bars"></i><span>推送系统权限申请</span></a></li>
+                                    <li><a parent_id="183" menu_id="209"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/audit/index"><i
+                                                class="fa fa-bars"></i><span>推送系统权限审核</span></a></li>
+                                    <li class="treeview">
+                                        <a href="#" parent_id="183" menu_id="174"><i
+                                                class="fa fa-bars"></i><span>广告后台</span>
+                                            <span class="pull-right-container"><i
+                                                    class="fa fa-angle-down pull-right"></i></span>
+                                        </a>
+                                        <ul class="treeview-menu">
+                                            <li><a parent_id="174" menu_id="175"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/index"><i
+                                                        class="fa fa-bars"></i><span>广告列表</span></a></li>
+                                            <li><a parent_id="174" menu_id="234"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/price/index"><i
+                                                        class="fa fa-bars"></i><span>广告筹码分配</span></a></li>
+                                            <li><a parent_id="174" menu_id="184"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/carousel/index"><i
+                                                        class="fa fa-bars"></i><span>轮播控制</span></a></li>
+                                            <li><a parent_id="174" menu_id="240"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/ad/position/index"><i
+                                                        class="fa fa-bars"></i><span>广告位配置</span></a></li>
+                                            <li><a parent_id="174" menu_id="244"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/ad/listPage"><i
+                                                        class="fa fa-bars"></i><span>广告列表（新）</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#" parent_id="117" menu_id="199"><i class="fa fa-bars"></i><span>数据看板</span>
+                                    <span class="pull-right-container"><i
+                                            class="fa fa-angle-down pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a parent_id="199" menu_id="200"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/outerLink/cbas"><i
+                                                class="fa fa-bars"></i><span>cbas后台</span></a></li>
+                                    <li><a parent_id="199" menu_id="235"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_dataBoard/config/index"><i
+                                                class="fa fa-bars"></i><span>活动申请配置</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#" parent_id="117" menu_id="124"><i
+                                        class="fa fa-bars"></i><span>用户标签及分群系统</span>
+                                    <span class="pull-right-container"><i
+                                            class="fa fa-angle-down pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li><a parent_id="124" menu_id="198"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/outerLink/kyc"><i
+                                                class="fa fa-bars"></i><span>KYC标签后台</span></a></li>
+                                    <li><a parent_id="124" menu_id="125"
+                                            href="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/UserGroup"><i
+                                                class="fa fa-bars"></i><span>用户分群</span></a></li>
+                                    <li><a parent_id="124" menu_id="126"
+                                            href="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/CbasLabel"><i
+                                                class="fa fa-bars"></i><span>标签库</span></a></li>
+                                    <li><a parent_id="124" menu_id="127"
+                                            href="http://testm.10jqka.com.cn/mobileHub/OperatePlatform/labelManage"><i
+                                                class="fa fa-bars"></i><span>标签管理</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#" parent_id="117" menu_id="128"><i
+                                        class="fa fa-bars"></i><span>内容管理及标签系统</span>
+                                    <span class="pull-right-container"><i
+                                            class="fa fa-angle-down pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class="treeview">
+                                        <a href="#" parent_id="128" menu_id="130"><i
+                                                class="fa fa-bars"></i><span>内容标签库</span>
+                                            <span class="pull-right-container"><i
+                                                    class="fa fa-angle-down pull-right"></i></span>
+                                        </a>
+                                        <ul class="treeview-menu">
+                                            <li><a parent_id="130" menu_id="133"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_operationArsenal/labelSystem"><i
+                                                        class="fa fa-bars"></i><span>标签体系</span></a></li>
+                                            <li><a parent_id="130" menu_id="134"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_operationArsenal/labelManage"><i
+                                                        class="fa fa-bars"></i><span>内容标签管理</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a parent_id="128" menu_id="197"
+                                            href="http://testm.10jqka.com.cn/mobileHub/docker_adConfig/outerLink/landPage"><i
+                                                class="fa fa-bars"></i><span>落地页配置后台</span></a></li>
+                                    <li><a parent_id="128" menu_id="204" href="#"><i
+                                                class="fa fa-bars"></i><span>马良绘图</span></a></li>
+                                    <li class="treeview">
+                                        <a href="#" parent_id="128" menu_id="129"><i
+                                                class="fa fa-bars"></i><span>人工文章</span>
+                                            <span class="pull-right-container"><i
+                                                    class="fa fa-angle-down pull-right"></i></span>
+                                        </a>
+                                        <ul class="treeview-menu">
+                                            <li><a parent_id="129" menu_id="131"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_operationArsenal/articleManage/query"><i
+                                                        class="fa fa-bars"></i><span>文章查询</span></a></li>
+                                            <li><a parent_id="129" menu_id="132"
+                                                    href="http://testm.10jqka.com.cn/mobileHub/docker_operationArsenal/articleManage/add"><i
+                                                        class="fa fa-bars"></i><span>新增文章</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a parent_id="117" menu_id="173"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_operationArsenal/userfile/list"><i
+                                        class="fa fa-bars"></i><span>用户名单</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="active treeview menu-open">
+                        <a href="#" parent_id="0" menu_id="56"><i class="fa fa-wechat"></i><span>微信服务号配置</span>
+                            <span class="pull-right-container"><i class="fa fa-angle-down pull-right"></i></span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a parent_id="56" menu_id="214"
+                                    href="http://testm.10jqka.com.cn/mobileHub/wechatMp/messageTemplates"><i
+                                        class="fa fa-bars"></i><span>消息模板管理</span></a></li>
+                            <li><a parent_id="56" menu_id="215"
+                                    href="http://testm.10jqka.com.cn/mobileHub/wechatMp/sendMessageTemplates"><i
+                                        class="fa fa-bars"></i><span>模板消息群发</span></a></li>
+                            <li class="active"><a parent_id="56" menu_id="243"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_transit/actRedPackage/index"><i
+                                        class="fa fa-bars"></i><span>活动红包配置</span></a></li>
+                            <li><a parent_id="56" menu_id="57"
+                                    href="http://testm.10jqka.com.cn/mobileHub/wechatMp/menu"><i
+                                        class="fa fa-bars"></i><span>菜单配置</span></a></li>
+                            <li><a parent_id="56" menu_id="58"
+                                    href="http://testm.10jqka.com.cn/mobileHub/wechatMp/subscribe"><i
+                                        class="fa fa-paper-plane-o"></i><span>被订阅回复配置</span></a></li>
+                            <li><a parent_id="56" menu_id="59"
+                                    href="http://testm.10jqka.com.cn/mobileHub/wechatMp/message"><i
+                                        class="fa fa-paper-plane"></i><span>收到消息回复配置</span></a></li>
+                            <li><a parent_id="56" menu_id="205"
+                                    href="http://testm.10jqka.com.cn/mobileHub/wechatMp/textMessageReply"><i
+                                        class="fa fa-bars"></i><span>关键词自动回复</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#" parent_id="0" menu_id="157"><i class="fa fa-bars"></i><span>同花顺速递</span>
+                            <span class="pull-right-container"><i class="fa fa-angle-down pull-right"></i></span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a parent_id="157" menu_id="182"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_event/EventAdd"><i
+                                        class="fa fa-bars"></i><span>添加临时事件</span></a></li>
+                            <li><a parent_id="157" menu_id="158"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_event/EventType"><i
+                                        class="fa fa-bars"></i><span>事件类型</span></a></li>
+                            <li><a parent_id="157" menu_id="181"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_event/EventList"><i
+                                        class="fa fa-bars"></i><span>查询事件</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#" parent_id="0" menu_id="171"><i class="fa fa-bars"></i><span>个性化精推</span>
+                            <span class="pull-right-container"><i class="fa fa-angle-down pull-right"></i></span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a parent_id="171" menu_id="179"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/index"><i
+                                        class="fa fa-bars"></i><span>个性化精推push</span></a></li>
+                            <li><a parent_id="171" menu_id="180"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/title"><i
+                                        class="fa fa-bars"></i><span>个性化标题</span></a></li>
+                            <li><a parent_id="171" menu_id="193"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/increase"><i
+                                        class="fa fa-bars"></i><span>5日涨幅榜</span></a></li>
+                            <li><a parent_id="171" menu_id="194"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/ztfp"><i
+                                        class="fa fa-bars"></i><span>涨停复盘</span></a></li>
+                            <li><a parent_id="171" menu_id="201"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/pushPage"><i
+                                        class="fa fa-bars"></i><span>市值分布</span></a></li>
+                            <li><a parent_id="171" menu_id="202"
+                                    href="http://testm.10jqka.com.cn/mobileHub/docker_maxattentionstock/bkyd"><i
+                                        class="fa fa-bars"></i><span>板块异动标题</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section><!-- /.sidebar -->
+        </aside><!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <style>
+                td {
+                    text-align: center
+                }
+
+                .redPointer::before {
+                    content: '*';
+                    color: red
+                }
+
+                .el-table__body-wrapper {
+                    overflow: hidden;
+                    position: relative;
+                    /* overflow-y:scroll;
+            height:160px; */
+                }
+
+                .el-date-editor .el-range-separator {
+                    padding: 0 0px;
+                    line-height: 32px;
+                    width: 5%;
+                    color: #303133;
+                }
+
+                .content-wrapper {
+                    min-height: 100%;
+                    background-color: #ecf0f5;
+                    z-index: 800;
+                    overflow: hidden;
+                }
+
+                body {
+                    margin: 0;
+                }
+
+                .el-radio {
+                    color: #606266;
+                    cursor: pointer;
+                    margin-right: 30px;
+                    line-height: 40px;
+                }
+
+                .el-dialog__title {
+                    line-height: 24px;
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #303133;
+                }
+
+                .el-input {
+                    position: relative;
+                    font-size: 14px;
+                    display: inline-block;
+                    width: 21%;
+                }
+
+                .el-textarea {
+                    position: relative;
+                    display: inline-block;
+                    width: 70%;
+                    vertical-align: bottom;
+                    font-size: 14px;
+                }
+            </style>
+            <div id="app" style="width: 98%; margin:20px;">
+                <div><span><strong style="font-size: 22px;">红包配置后台</strong></span></div>
+                <div style="width: 60%;">
+                    <template>
+                        <el-button type="primary" plain v-on:click="newActive" style="margin-top:40px">新建活动</el-button>
+                        <el-dialog :title="title" :visible.sync="dialogFormVisible" top="8vh">
+                            <div>
+                                <el-radio-group v-model="radio1" v-on:change="checkedChange(radio1)">
+                                    <el-radio-button label="基本设置"></el-radio-button>
+                                    <el-radio-button label="文案设置"></el-radio-button>
+                                </el-radio-group>
+                            </div>
+                            <!-- 基本设置 -->
+                            <div style="height: 600px;margin-top: 20px;" id="select01">
+                                <!-- 活动名称 -->
+                                <div style="height: 40px;">
+                                    <span style="float: left;line-height: 40px;font-size: 15px;"
+                                        class="redPointer">活动名称:</span>
+                                    <el-input v-model="activeName" placeholder="请输入活动名称"
+                                        style="float: left;margin-left: 20px;"></el-input>
+                                </div>
+                                <!-- 活动时间 -->
+                                <div style="height: 40px;margin-top: 30px;">
+                                    <span style="float: left;line-height: 40px;font-size: 15px;"
+                                        class="redPointer">活动时间:</span>
+                                    <el-date-picker v-model="value1" type="daterange" range-separator="至"
+                                        start-placeholder="开始日期" end-placeholder="结束日期" format="yyyy-MM-dd"
+                                        value-format="yyyy-MM-dd" style="float: left;margin-left: 20px;">
+                                    </el-date-picker>
+                                </div>
+                                <!-- 红包码过期时间 -->
+                                <div style="height: 40px; margin-top: 30px;">
+                                    <span style="float: left;line-height: 40px;font-size: 15px;">红包码过期时间:</span>
+                                    <template>
+                                        <el-date-picker v-model="value4" type="dates" placeholder="选择一个日期"
+                                            format="yyyy-MM-dd" value-format="yyyy-MM-dd"
+                                            style="float: left;margin-left: 20px;" v-on:change="outDate01">
+                                        </el-date-picker><span
+                                            style="float: left;line-height: 40px;font-size: 15px;margin-left: 20px;">或</span>
+                                        <el-input v-model="value" v-on:change="outDate02" style="margin-left:20px">
+                                        </el-input> 小时
+                                    </template>
+                                </div>
+                                <!-- 红包金额 -->
+                                <div style="height: 40px; margin-top: 30px;">
+                                    <span style="float: left;line-height: 40px;font-size: 15px;"
+                                        class="redPointer">红包金额:</span>
+                                    <el-input placeholder="请输入最小金额" v-model="minCash"
+                                        style="float: left;margin-left: 20px;" v-on:blur="jiaoYan01($event)"></el-input>
+                                    <span
+                                        style="float: left;line-height: 40px;font-size: 15px;margin-left: 20px;">至</span>
+                                    <el-input placeholder="请输入最大金额" v-model="maxCash"
+                                        style="float: left;margin-left: 20px;" v-on:blur="jiaoYan02($event)"></el-input>
+                                </div>
+                                <!-- 活动总量 -->
+                                <div style="height: 40px; margin-top: 30px;">
+                                    <span style="float: left;line-height: 40px;font-size: 15px;"
+                                        class="redPointer">活动总量:</span>
+                                    <el-input placeholder="请输入活动总量" v-model="activeAll"
+                                        style="float: left;margin-left: 20px;" v-on:blur="jiaoYan03($event)"></el-input>
+                                    <span
+                                        style="float: left;line-height: 40px;font-size: 15px;margin-left: 10px;">元</span>
+                                    <span style="float: left;line-height: 40px;font-size: 15px;margin-left: 20px;">每日发放:
+                                        最多</span>
+                                    <el-input placeholder="请输入每日发放最多数" v-model="maxPushCount"
+                                        style="float: left;margin-left: 20px;" v-on:blur="jiaoYan04($event)"></el-input>
+                                    <span
+                                        style="float: left;line-height: 40px;font-size: 15px;margin-left: 10px;">元</span>
+                                </div>
+                                <!-- 单用户最多领 -->
+                                <div style="height: 40px; margin-top: 30px;">
+                                    <span style="float: left;line-height: 40px;font-size: 15px;"
+                                        class="redPointer">单用户最多可领: 共计</span>
+                                    <el-input placeholder="请输入" v-model="oneUserCount"
+                                        style="float: left;margin-left: 10px;" v-on:blur="jiaoYan05($event)"></el-input>
+                                    <span
+                                        style="float: left;line-height: 40px;font-size: 15px;margin-left: 10px;">个</span>
+                                    <el-input placeholder="请输入" v-model="oneUserMoney"
+                                        style="float: left;margin-left: 20px;" v-on:blur="jiaoYan06($event)"></el-input>
+                                    <span
+                                        style="float: left;line-height: 40px;font-size: 15px;margin-left: 10px;">元</span>
+                                </div>
+                                <div style="height: 40px; margin-top: 30px;">
+                                    <span
+                                        style="float: left;line-height: 40px;font-size: 15px;margin-left: 110px;">单日:</span>
+                                    <el-input placeholder="请输入" v-model="oneDayCount"
+                                        style="float: left;margin-left: 10px;" v-on:blur="jiaoYan07($event)"></el-input>
+                                    <span
+                                        style="float: left;line-height: 40px;font-size: 15px;margin-left: 10px;">个</span>
+                                    <el-input placeholder="请输入" v-model="oneDayrMoney"
+                                        style="float: left;margin-left: 20px;" v-on:blur="jiaoYan08($event)"></el-input>
+                                    <span
+                                        style="float: left;line-height: 40px;font-size: 15px;margin-left: 10px;">元</span>
+                                </div>
+                                <!-- 特殊设置 -->
+                                <div style="height: 40px; margin-top: 30px;">
+                                    <span style="float: left;line-height: 40px;font-size: 15px;"
+                                        class="redPointer">特殊设置:</span>
+                                    <el-radio v-model="splice" label="1" style="margin-left:30px">开启</el-radio>
+                                    <el-radio v-model="splice" label="0">关闭</el-radio><span
+                                        style="line-height: 40px;font-size: 8px;margin-left: 10px;color: red;">用户只能领取一个Userid的红包</span>
+                                </div>
+                                <div style="height: 40px; margin-top: 0px;margin-left: 6px;">
+                                    <el-radio v-model="splice02" label="1" style="margin-left:94px">开启</el-radio>
+                                    <el-radio v-model="splice02" label="0">关闭</el-radio><span
+                                        style="line-height: 40px;font-size: 8px;margin-left: 10px;color: red;">领取失败可再次领取</span>
+                                </div>
+                            </div>
+
+                            <!-- 文案设置 -->
+                            <div style="height: 650px;margin-top: 20px;display: none;" id="select02">
+                                <!-- 活动祝语 -->
+                                <div style="height: 53px;">
+                                    <span style="float: left;line-height: 53px;font-size: 15px;"
+                                        class="redPointer">活动祝语:</span>
+                                    <el-input v-model="activeBestWishes" :rows="2" type="textarea" placeholder="输入活动祝语"
+                                        style="float: left;margin-left: 20px;"></el-input>
+                                </div>
+                                <!-- 发送红包回复 -->
+                                <div style="height: 80px; margin-top: 30px;">
+                                    <span style="float: left;line-height: 80px;font-size: 15px;">发送红包回复:</span>
+                                    <div style="float: left;width: 60px;margin-left: 20px;">
+                                        <el-radio-group v-model="callBack" v-on:change="call(callBack)">
+                                            <el-radio label="1" style="float: left;">回复</el-radio>
+                                            <el-radio label="0" style="float: left;">不回复</el-radio>
+                                        </el-radio-group>
+                                    </div>
+                                    <el-input v-model="redCallBack" :rows="2" type="textarea" v-show="bestWishes"
+                                        placeholder="请输入" style="float: left;margin-left: 20px;margin-top: 13px;">
+                                    </el-input>
+                                </div>
+                                <!-- 红包过期回复 -->
+                                <div style="height: 53px; margin-top: 30px;">
+                                    <span style="float: left;line-height: 53px;font-size: 15px;"
+                                        class="redPointer">红包过期回复:</span>
+                                    <el-input v-model="overdueCallBack" :rows="2" type="textarea" placeholder="请输入"
+                                        style="float: left;margin-left: 20px;"></el-input>
+                                </div>
+                                <!-- 领取失败回复 -->
+                                <div style="height: 53px; margin-top: 30px;">
+                                    <span style="float: left;line-height: 53px;font-size: 15px;"
+                                        class="redPointer">领取失败回复:</span>
+                                    <el-input v-model="failGetCallBack" :rows="2" type="textarea" placeholder="请输入"
+                                        style="float: left;margin-left: 20px;"></el-input>
+                                </div>
+                                <!-- 用户领取金额 -->
+                                <div style="height: 53px; margin-top: 30px;">
+                                    <div style="float: left;width:100px;line-height: 28px;">
+                                        <span style="float: left;font-size: 15px;" class="redPointer">用户领取金额</span>
+                                        <span style="float: left;font-size: 15px;">达到上限回复:</span>
+                                    </div>
+                                    <el-input v-model="getMaxMoney" :rows="2" type="textarea" placeholder="请输入"
+                                        style="float: left;margin-left: 20px;"></el-input>
+                                </div>
+                                <!-- 用户领取个数 -->
+                                <div style="height: 53px; margin-top: 30px;">
+                                    <div style="float: left;width:100px;line-height: 28px;">
+                                        <span style="float: left;font-size: 15px;" class="redPointer">用户领取个数</span>
+                                        <span style="float: left;font-size: 15px;">达到上限回复:</span>
+                                    </div>
+                                    <el-input v-model="getMaxCount" :rows="2" type="textarea" placeholder="请输入"
+                                        style="float: left;margin-left: 20px;"></el-input>
+                                </div>
+                                <!-- 当日活动达到上限 -->
+                                <div style="height: 53px; margin-top: 30px;">
+                                    <div style="float: left;width:100px;line-height: 28px;">
+                                        <span style="float: left;font-size: 15px;" class="redPointer">当日活动达到</span>
+                                        <span style="float: left;font-size: 15px;">上限回复:</span>
+                                    </div>
+                                    <el-input v-model="nowDayMax" :rows="2" type="textarea" placeholder="请输入"
+                                        style="float: left;margin-left: 20px;"></el-input>
+                                </div>
+                                <!-- 活动达到上限 -->
+                                <div style="height: 53px; margin-top: 30px;">
+                                    <div style="float: left;width:100px;line-height: 28px;">
+                                        <span style="float: left;font-size: 15px;" class="redPointer">活动达到</span>
+                                        <span style="float: left;font-size: 15px;">上限回复:</span>
+                                    </div>
+                                    <el-input v-model="activeBigMax" :rows="2" type="textarea" placeholder="请输入"
+                                        style="float: left;margin-left: 20px;"></el-input>
+                                </div>
+                            </div>
+
+                            <div slot="footer" class="dialog-footer">
+                                <el-button v-on:click="dialogFormVisible = false;">取 消</el-button>
+                                <el-button type="primary" v-on:click="sure">确 定</el-button>
+                            </div>
+                        </el-dialog>
+                    </template>
+                </div>
+                <div style="margin-top:30px">
+                    <template>
+                        <el-table :data="tableData.slice((currentPage-1)*PageSize,currentPage*PageSize)" border
+                            style="width: 100%">
+                            <el-table-column fixed prop="actId" label="活动ID" width="320" align="center">
+                            </el-table-column>
+                            <el-table-column prop="actName" label="活动名称" width="350" align="center"></el-table-column>
+                            <el-table-column prop="newTime" label="活动起止时间" width="480" align="center"></el-table-column>
+                            <el-table-column fixed="right" label="操作" width="440" align="center"><template
+                                    slot-scope="scope">
+                                    <el-button type="text" size="small"
+                                        v-on:click.native.prevent="publish(scope.$index, tableData, scope.row)"
+                                        v-show="scope.row.status">发布</el-button>
+                                    <el-button type="text" size="small"
+                                        v-on:click="failOnline(scope.$index, tableData, scope.row)"
+                                        v-show="scope.row.status02">下线</el-button>
+                                    <el-button type="text" size="small" :disabled="scope.row.status == false?true:false"
+                                        v-on:click="edit(scope.row)">编辑</el-button>
+                                    <el-button type="text" size="small"
+                                        v-on:click.native.prevent="deleteRow(scope.$index, tableData, scope.row)">删除
+                                    </el-button>
+                                    <el-button v-on:click="handleClick(scope.row)" type="text" size="small">数据
+                                    </el-button>
+                                </template></el-table-column>
+                        </el-table>
+                        <el-dialog title="确认下线" :visible.sync="diaLog">
+                            <el-input type="textarea" :row="3" placeholder="请输入内容" v-model="faillineText"></el-input>
+                            <div slot="footer" class="dialog-footer">
+                                <el-button v-on:click="diaLog = false">取消</el-button>
+                                <el-button type="primary" v-on:click="sureFail">确定</el-button>
+                            </div>
+                        </el-dialog>
+                    </template>
+                    <div class="block" style="margin-left: 25px;">
+                        <el-pagination v-on:size-change="handleSizeChange" v-on:current-change="handleCurrentChange"
+                            :current-page.sync="currentPage" :page-sizes="pageSizes" :page-size="PageSize"
+                            layout="sizes, prev, pager, next" :total="totalCount"></el-pagination>
+                    </div>
+                    <!-- 发红包详情 -->
+                    <el-dialog title="红包发放详情" :visible.sync="dialogFormVisible02" top="8vh">
+                        <div style="height: 1000px;margin-top: 0px;">
+                            <div>
+                                <span>日期/时点 选择</span>
+                            </div>
+                            <div style="height: 40px;margin-top: 30px;">
+                                <span style="float: left;line-height: 40px;font-size: 15px;">起止时间:</span>
+                                <el-date-picker v-model="redPullTime" type="daterange" range-separator="至"
+                                    start-placeholder="开始日期" end-placeholder="结束日期" format="yyyy-MM-dd"
+                                    value-format="yyyy-MM-dd" style="float: left;margin-left: 20px;"
+                                    v-on:change="timeChoice01"></el-date-picker>
+                            </div>
+                            <div style="height: 40px;margin-top: 30px;margin-left: 84px;">
+                                <el-radio-group v-model="dayChoice" v-on:change="quickTime">
+                                    <el-radio-button label="近7日"></el-radio-button>
+                                    <el-radio-button label="近15日"></el-radio-button>
+                                    <el-radio-button label="近30日"></el-radio-button>
+                                </el-radio-group>
+                            </div>
+                            <div style="margin-top: 20px">
+                                <div style="width=100%; height:30px; background:#ddd; color:#fff;line-height:30px">
+                                    <span v-text="redPullTime01" style=" margin-left: 20px;"></span> 至 <span
+                                        v-text="redPullTime02"></span>
+                                    <span style="float:right;margin-right:20px;cursor:pointer"
+                                        v-on:click="downLoad01"><strong>下载表格</strong></span>
+                                </div>
+                                <el-table
+                                    :data="tableData01.slice((currentPage01-1)*PageSize01,currentPage01*PageSize01)"
+                                    border style="width: 100%;">
+                                    <el-table-column fixed prop="trade_date" label="时间" width="100" align="center">
+                                    </el-table-column>
+                                    <el-table-column prop="package_num" label="生成红包数" width="109" align="center">
+                                    </el-table-column>
+                                    <el-table-column prop="total_amount" label="生成红包总金额" width="140" align="center">
+                                    </el-table-column>
+                                    <el-table-column fixed prop="write_off_num" label="核销红包数" width="110"
+                                        align="center"></el-table-column>
+                                    <el-table-column prop="write_off_amount" label="核销红包总金额" width="150" align="center">
+                                    </el-table-column>
+                                    <el-table-column prop="subscribe_num" label="核销后关注公众号" width="170" align="center">
+                                    </el-table-column>
+                                    <el-table-column prop="unsubscribe_num" label="24小时内取关" width="130" align="center">
+                                    </el-table-column>
+                                </el-table>
+                                <div style="width:100%;">
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td style="width:11.1%">总计</td>
+                                            <td style="width:12%" v-text="total01['package_num']"></td>
+                                            <td style="width:15.4%" v-text="total01['total_amount']"></td>
+                                            <td style="width:12.1%" v-text="total01['write_off_num']"></td>
+                                            <td style="width:16.5%" v-text="total01['write_off_amount']"></td>
+                                            <td style="width:18.7%" v-text="total01['subscribe_num']"></td>
+                                            <td style="width:14.3%" v-text="total01['unsubscribe_num']"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="block" style="margin-left: 25px;">
+                                <el-pagination v-on:size-change="handleSizeChange01"
+                                    v-on:current-change="handleCurrentChange01" :current-page.sync="currentPage01"
+                                    :page-sizes="pageSizes01" :page-size="PageSize01" layout="sizes, prev, pager, next"
+                                    :total="totalCount01"></el-pagination>
+                            </div>
+                            <div style="margin-top:20px"><span><strong
+                                        style="font-size: 22px;color: #000;">红包流水情况</strong></span></div>
+                            <div style="height: 40px;margin-top: 20px;">
+                                <span style="float: left;line-height: 40px;font-size: 15px;">选择日期:</span>
+                                <el-date-picker type="dates" v-model="choiceDay" placeholder="请选择一个日期"
+                                    style="float: left;margin-left: 20px;" format="yyyy-MM-dd" value-format="yyyy-MM-dd"
+                                    v-on:change="timeChoice02"></el-date-picker>
+                            </div>
+                            <div style="margin-top: 20px">
+                                <div style="width=100%; height:30px; background:#ddd; color:#fff;line-height:30px">
+                                    <span v-text="redPullTime03" style=" margin-left: 20px;"></span>
+                                    <span style="float:right;margin-right:20px;cursor:pointer"
+                                        v-on:click="downLoad02"><strong>下载表格</strong></span>
+                                </div>
+                                <el-table
+                                    :data="tableData02.slice((currentPage02-1)*PageSize02,currentPage02*PageSize02)"
+                                    border style="width: 100%;">
+                                    <el-table-column fixed prop="time" label="时间" width="180" align="center">
+                                    </el-table-column>
+                                    <el-table-column prop="order_id" label="编号" width="180" align="center">
+                                    </el-table-column>
+                                    <el-table-column prop="price" label="红包总金额" width="180" align="center">
+                                    </el-table-column>
+                                    <el-table-column fixed prop="openId" label="用户OPENID" width="180" align="center">
+                                    </el-table-column>
+                                    <el-table-column prop="nickname" label="用户昵称" width="190" align="center">
+                                    </el-table-column>
+                                </el-table>
+                                <div style="width:100%;">
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td style="width:19.78%">总计</td>
+                                            <td style="width:19.78%" v-text="total02['order_id']"></td>
+                                            <td style="width:19.78%" v-text="total02['price']"></td>
+                                            <td style="width:19.78%" v-text="total02['openId']"></td>
+                                            <td style="width:20.87%" v-text="total02['nickname']"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="block" style="margin-left: 25px;">
+                                <el-pagination v-on:size-change="handleSizeChange02"
+                                    v-on:current-change="handleCurrentChange02" :current-page.sync="currentPage02"
+                                    :page-sizes="pageSizes02" :page-size="PageSize02" layout="sizes, prev, pager, next"
+                                    :total="totalCount02"></el-pagination>
+                            </div>
+                        </div>
+                    </el-dialog>
+                </div>
+            </div>
+            <script>
+            </script>
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 0.0.1
+            </div>
+            <strong>Copyright © 1995-2020 <a href="https://www.10jqka.com.cn/">浙江核新同花顺网络信息股份有限公司</a>.</strong>
+            版权所有
+        </footer>
+        <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+    <!--alert-->
+    <div class="modal fade" id="eqadmin-alert">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="add_title">提示</h4>
+                </div>
+                <div class="modal-body" id="alert_content">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- jQuery 3 -->
+    <script src="/mobileHub/bower_components/jquery/dist/jquery.min.js"></script><!-- jQuery UI 1.11.4 -->
+    <script src="/mobileHub/bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button);
+    </script><!-- Bootstrap 3.3.7 -->
+    <script src="/mobileHub/bower_components/bootstrap/dist/js/bootstrap.min.js"></script><!-- Morris.js charts -->
+    <script src="/mobileHub/bower_components/raphael/raphael.min.js"></script>
+    <script src="/mobileHub/bower_components/morris.js/morris.min.js"></script><!-- Sparkline -->
+    <script src="/mobileHub/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script><!-- jvectormap -->
+    <script src="/mobileHub/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="/mobileHub/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script><!-- jQuery Knob Chart -->
+    <script src="/mobileHub/bower_components/jquery-knob/dist/jquery.knob.min.js"></script><!-- daterangepicker -->
+    <script src="/mobileHub/bower_components/moment/min/moment.min.js"></script>
+    <script src="/mobileHub/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script><!-- datepicker -->
+    <script src="/mobileHub/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script
+        src="/mobileHub/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="/mobileHub/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script><!-- Slimscroll -->
+    <script src="/mobileHub/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script><!-- FastClick -->
+    <script src="/mobileHub/bower_components/fastclick/lib/fastclick.js"></script><!-- AdminLTE App -->
+    <script src="/mobileHub/dist/js/adminlte.fixed.min.js"></script><!-- AdminLTE for demo purposes -->
+    <script src="/mobileHub/dist/js/skinSetting.js"></script><!-- Select2 -->
+    <script src="/mobileHub/bower_components/select2/dist/js/select2.full.min.js"></script>
+    <script src="/mobileHub/bower_components/select2/dist/js/i18n/zh-CN.js"></script><!-- Bootstrap-sweetAlert -->
+    <script src="/mobileHub/bower_components/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/mobileHub/bower_components/wangEditor/release/wangEditor.js"></script>
+    <script src="/mobileHub/bower_components/spectrum/spectrum.js"></script><!-- 公共函数 -->
+    <script src="/mobileHub/js/public/main.js"></script>
+    <script>
+        const ROUTE_PREFIX = '/mobileHub';
+        var alertReloadInClose = true;
+        $(document).ready(function () {
+            $('#sidebar-menu').on('click', 'a', function () {
+                if ($(this).attr('href') !== '#') {
+                    document.cookie = "menu_id=" + $(this).attr('menu_id') + ";path=/";
+                }
+            });
+
+
+            $('#refresh').on('click', function () {
+                try {
+                    $.ajax({
+                        url: '/mobileHub/refresh/',
+                        method: 'get',
+                        dataType: 'text',
+                        success: function (data) {
+                            $('#alert_content').html('刷新菜单成功');
+                            $('#eqadmin-alert').modal();
+                        },
+                        error: function (data) {
+                            $('#alert_content').html('刷新失败');
+                            $('#eqadmin-alert').modal();
+                        }
+                    });
+                }
+                catch (e) {
+                    $('#alert_content').html('刷新失败');
+                    $('#eqadmin-alert').modal();
+                }
+            });
+            //提示框
+            $('#eqadmin-alert').on('hide.bs.modal', function () {
+                if (alertReloadInClose) {
+                    window.location.reload();
+                }
+            });
+        });
+    </script>
+    <script src="/mobileHub/js/adConfig/common/elementUI.js"></script>
+    <script src="/mobileHub/js/v2/actRedPackage/redAct.js"></script>
+    <script src="/mobileHub/bower_components/jquery-qrcode/jquery.qrcode.min.js"></script>
+    <script src="/mobileHub/bower_components/fex-webuploader/dist/webuploader.nolog.min.js"></script>
+    <script src="/mobileHub/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/mobileHub/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="/mobileHub/js/adConfig/authorityAudit.js"></script>
+</body>
+
+</html>
